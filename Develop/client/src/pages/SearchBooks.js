@@ -68,7 +68,7 @@ const SearchBooks = () => {
     if (!token) {
       return false;
     }
-
+    
     try {
       const { data } = await saveBook({
         variables: { input: bookToSave }
